@@ -1,0 +1,57 @@
+.nav-item .nav-link.active {
+  border-bottom: 2px solid green;
+}
+
+.dropdown1-menu {
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: block; /* always visible as in your image */
+  position: static;
+  border: none;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown1-menu .row {
+  padding: 1rem;
+}
+
+.dropdown1-menu a {
+  display: block;
+  padding: 5px 0;
+  color: #212529;
+  text-decoration: none;
+}
+
+.dropdown1-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .logo {
+  font-weight: bold;
+  color: #90ee90;
+}
+
+.footer .contact {
+  margin-top: 10px;
+}
