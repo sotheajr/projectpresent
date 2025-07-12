@@ -1,0 +1,80 @@
+/* iPhone (max-width 767px) Header responsive iphone 13 14 14 16 */
+@media (max-width: 767.98px) {
+  .header-topbar .social-icons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    align-items: center; /* add this */
+  }
+
+  .header-topbar .social-icons > * {
+    margin-bottom: 0 !important; /* prevent stacking */
+  }
+  .header-topbar .dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-topbar .info-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-start;
+  }
+
+  .header-topbar .dropdown-menu {
+    min-width: auto;
+  }
+
+  .header-topbar a,
+  .header-topbar span {
+    font-size: 0.9rem;
+  }
+}
+/* banner responsive iphone 13 14 14 16 */
+.banner-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Mobile: iPhone 13–16, tablets */
+@media (max-width: 768px) {
+  .banner-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Form container moved below banner */
+  .overlay-container {
+    position: static !important;
+    transform: none !important;
+    margin-top: 1rem;
+  }
+}
+
+.overlay-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 80%;
+}
+
+.search-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 375px) and (max-width: 440px) {
+  .sidebar {
+    display: none !important;
+  }
+  #toggleSidebar {
+    display: none !important;
+  }
+}

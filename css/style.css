@@ -349,3 +349,21 @@ a.card-link {
     margin-top: 20px;
   }
 }
+@media (max-width: 767.98px) {
+  .video-scroll-row {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .col {
+    min-width: 220px;
+  }
+  .video-scroll-row > .col {
+    min-width: 220px;
+    flex: 0 0 auto;
+  }
+}
