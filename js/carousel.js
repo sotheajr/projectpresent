@@ -3,8 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (heroCarousel) {
     const carousel = new bootstrap.Carousel(heroCarousel, {
-      interval: 10000, // 10 វិនាទី
-      ride: "carousel",
+      interval: 10000,
+      wrap: true,
     });
+
+    carousel.cycle();
   }
 });
