@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condos Real Estate</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/responsiveMobile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="header_condos"></div>
+    <main>
+      <!-- Banner Section -->
+      <section class="position-relative">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/img/banner1.jpg"
+                class="d-block banner-img"
+                alt="Banner 1"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="/img/banner2.jpg"
+                class="d-block banner-img"
+                alt="Banner 2"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="/img/banner3.jpg"
+                class="d-block banner-img"
+                alt="Banner 3"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="/img/banner4.jpg"
+                class="d-block banner-img"
+                alt="Banner 4"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="/img/banner5.jpg"
+                class="d-block banner-img"
+                alt="Banner 5"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="/img/banner_condo.png"
+                class="d-block banner-img"
+                alt="Banner 6"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Overlay -->
+        <div class="overlay-container text-white">
+          <div class="card bg-dark bg-opacity-75 p-4 search-card">
+            <div class="mb-3 text-center">
+              <h4 style="color: #fcfafa">Find Cambodia Real Estate</h4>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs justify-content-center mb-3">
+              <li class="nav-item">
+                <button
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#buy"
+                >
+                  Buy
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#rent"
+                >
+                  Rent
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#sell"
+                >
+                  Sell
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content mb-4">
+              <div class="tab-pane fade show active" id="buy">
+                <form>
+                  <div class="mb-3">
+                    <select class="form-select" required>
+                      <option selected disabled>
+                        Search by Location (25 provinces)
+                      </option>
+                      <option>Phnom Penh</option>
+                      <option>Siem Reap</option>
+                      <option>Sihanoukville</option>
+                      <option>Kampot</option>
+                      <option>Kep</option>
+                      <option>Battambang</option>
+                      <option>Kandal</option>
+                      <option>Takeo</option>
+                      <option>Kampong Cham</option>
+                      <option>Kampong Thom</option>
+                      <option>Kampong Chhnang</option>
+                      <option>Kampong Speu</option>
+                      <option>Pursat</option>
+                      <option>Preah Vihear</option>
+                      <option>Prey Veng</option>
+                      <option>Svay Rieng</option>
+                      <option>Stung Treng</option>
+                      <option>Ratanakiri</option>
+                      <option>Kratie</option>
+                      <option>Oddar Meanchey</option>
+                      <option>Pailin</option>
+                      <option>Tbong Khmum</option>
+                      <option>Koh Kong</option>
+                      <option>Mondulkiri</option>
+                    </select>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-success">🔍 Search</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="rent">
+                <!-- Same form can be copied here -->
+              </div>
+              <div class="tab-pane fade" id="sell">
+                <!-- Same form can be copied here -->
+              </div>
+            </div>
+
+            <!-- Start Now -->
+            <div class="text-center">
+              <button
+                class="btn btn-warning btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#startNowModal"
+              >
+                START NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="startNowModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content shadow">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Property Requirements</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Describe your requirements"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">
+                  Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Featured New Developments -->
+    <div class="container mt-4">
+      <h4>
+        <i class="fa-brands fa-creative-commons-remix"></i> Featured New
+        Developments
+      </h4>
+      <div
+        class="d-flex flex-row flex-nowrap overflow-auto g-3"
+        style="gap: 1rem"
+      >
+        <div class="col">
+          <a href="/detail_1.html" class="card-link">
+            <div class="property-card">
+              <img src="img/JJtower3.jpeg" alt="Eco Residence" />
+              <span class="badge-overlay"
+                ><i class="fa-solid fa-camera-retro"></i
+              ></span>
+              <div class="card-body">
+                <h6>J Tower 3</h6>
+                <p class="text-muted mb-1">From $330,000</p>
+                <small>Tonle Bassac</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://example.com/dragon-land" class="card-link">
+            <div class="property-card">
+              <img src="img/Time_square.jpeg" alt="Dragon Land" />
+              <span class="badge-overlay"
+                ><i class="fas fa-video"></i> 360°</span
+              >
+              <div class="card-body">
+                <h6>Time Square 8</h6>
+                <p class="text-muted mb-1">From $68,250</p>
+                <small>Toul Tum Poung 1</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/borey-williams" class="card-link">
+            <div class="property-card">
+              <img src="img/time10.jpeg" alt="Borey Williams" />
+              <span class="badge-overlay"
+                ><i class="fas fa-rotate"></i> 360°</span
+              >
+              <div class="card-body">
+                <h6>Time Square 10</h6>
+                <p class="text-muted mb-1">From $40,000</p>
+                <small>Sihanoukville</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/one-tropica" class="card-link">
+            <div class="property-card">
+              <img src="img/LecondeBKK1.jpeg" alt="One Tropica" />
+              <div class="card-body">
+                <h6>Le Condé BKK1</h6>
+                <p class="text-muted mb-1">From $94,538</p>
+                <small>BKK1</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/borey-nadi" class="card-link">
+            <div class="property-card">
+              <img
+                src="img/picasso-sky-gemme-thumbnail-400x300-70.jpeg"
+                alt="Borey Nadi"
+              />
+              <span class="badge-overlay"
+                ><i class="fa-solid fa-camera-retro"></i
+              ></span>
+              <div class="card-body">
+                <h6>Picasso Sky Gemme</h6>
+                <p class="text-muted mb-1">From $221,430</p>
+                <small>BKK1</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="view-more">
+        <a
+          href="https://example.com/all-boreys"
+          class="btn btn-success px-4 py-2"
+          >View More</a
+        >
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <h4><i class="fa-solid fa-building"></i> Featured Serviced Apartments</h4>
+      <div
+        class="d-flex flex-row flex-nowrap overflow-auto g-3"
+        style="gap: 1rem"
+      >
+        <div class="col">
+          <a href="/detail_2.html" class="card-link">
+            <div class="property-card">
+              <img src="img/Central.jpg" alt="One Tropica" />
+              <div class="card-body">
+                <h6>Central Mansions Serviced Apartments</h6>
+                <p class="text-muted mb-1">Price from: $1,600</p>
+                <small>Wat Phnom, Daun Penh, Phnom Penh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://example.com/dragon-land" class="card-link">
+            <div class="property-card">
+              <img src="img/Aura.jpeg" alt="Dragon Land" />
+              <span class="badge-overlay"
+                ><i class="fas fa-video"></i> VIDEO</span
+              >
+              <div class="card-body">
+                <h6>Aura Condominium</h6>
+                <p class="text-muted mb-1">Price from:$950</p>
+                <small>Boeng Reang, Daun Penh, Phnom Penh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/borey-williams" class="card-link">
+            <div class="property-card">
+              <img src="img/Luxcity.jpeg" alt="Borey Williams" />
+              <span class="badge-overlay"
+                ><i class="fas fa-rotate"></i> 360°</span
+              >
+              <div class="card-body">
+                <h6>Luxcity Hotel</h6>
+                <p class="text-muted mb-1">Price from: $1,250</p>
+                <small>Mittapheap, 7 Makara, Phnom Penh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/eco-residence" class="card-link">
+            <div class="property-card">
+              <img src="img/attratee.jpeg" alt="Eco Residence" />
+              <span class="badge-overlay"
+                ><i class="fas fa-video"></i> VIDEO</span
+              >
+              <div class="card-body">
+                <h6>L’attrait Boeung Keng Kang</h6>
+                <p class="text-muted mb-1">Price from: $650</p>
+                <small>BKK 1, Chamkarmon, Phnom Penh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://example.com/borey-nadi" class="card-link">
+            <div class="property-card">
+              <img src="img/Ricnar.jpeg" alt="Borey Nadi" />
+              <span class="badge-overlay"
+                ><i class="fas fa-video"></i> VIDEO</span
+              >
+              <div class="card-body">
+                <h6>Richardsons Serviced Apartment</h6>
+                <p class="text-muted mb-1">Price from: $750</p>
+                <small>BKK 1, Chamkarmon, Phnom Penh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="view-more">
+        <a
+          href="https://example.com/all-boreys"
+          class="btn btn-success px-4 py-2"
+          >View More</a
+        >
+      </div>
+    </div>
+    <div id="condos"></div>
+    <div class="container my-5">
+      <h3 class="mb-4">Featured Developers</h3>
+      <div class="row g-4">
+        <!-- Developer Card -->
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/naki.png"
+              alt="Naki Group"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Naki Group Co., Ltd.</div>
+            <div class="card-text">Naki Realty was founded in Cambodia...</div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/bodaiju.png"
+              alt="Bodaiju Residences"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Bodaiju Residences</div>
+            <div class="card-text">
+              Bodaiju Residences is strategically loc...
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/tanichu.png"
+              alt="Tanichu"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Tanichu Assetment.Co., Ltd</div>
+            <div class="card-text">
+              Tanichu Assetment Co., Ltd is a leadin...
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/megakim.png"
+              alt="Megakim"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Megakim World Corp Ltd</div>
+            <div class="card-text">Megakim World Corp Ltd. is one of Ca...</div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/picasso.png"
+              alt="Global Titan Stone"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Global Titan Stone Real Estate ...</div>
+            <div class="card-text">GLOBAL TITAN STONE REAL ESTATE ...</div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="developer-card h-100">
+            <img
+              src="img/picasso.png"
+              alt="Global Titan Stone"
+              class="img-fluid developer-logo"
+            />
+            <div class="card-title">Global Titan Stone Real Estate ...</div>
+            <div class="card-text">GLOBAL TITAN STONE REAL ESTATE ...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="text-center">
+        <button class="view-more-btn mt-4">View More</button>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <h5><i class="fa-solid fa-location-dot"></i> Popular Locations</h5>
+      <div id="locationCarousel" class="carousel slide" data-bs-wrap="true">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/pp.jpg" />
+                  <div class="overlay">
+                    Phnom Penh<br />Sale: 7k | Rent: 27k
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/chamkamon.jpg" />
+                  <div class="overlay">
+                    Chamkarmon<br />Sale: 1k | Rent: 16k
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/doun_Penh.jpg" />
+                  <div class="overlay">Daun Penh<br />Sale: 349 | Rent: 3k</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/BKK1.jpg" />
+                  <div class="overlay">BKK 1<br />Sale: 309 | Rent: 6k</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/RUssian_Maket.jpg" />
+                  <div class="overlay">
+                    Russian Market<br />Sale: 103 | Rent: 2k
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/Bkk2.jpg" />
+                  <div class="overlay">
+                    BangKangkong<br />Sale: 103 | Rent: 2k
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/RUssian_Maket.jpg" />
+                  <div class="overlay">
+                    RUssian Maket<br />Sale: 7k | Rent: 27k
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/sihaknukvil.jpg" />
+                  <div class="overlay">
+                    Sihanoukville<br />Sale: 195 | Rent: 51
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/kampot.jpg" />
+                  <div class="overlay">Kampot<br />Sale: 174 | Rent: 62</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/SiemReam.jpg" />
+                  <div class="overlay">Siem Reap<br />Sale: 3k | Rent: 4k</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/Battombong.jpg" />
+                  <div class="overlay">Battambong<br />Sale:35 | Rent: 3</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="location-card">
+                  <img src="img/Kandal.jpg" />
+                  <div class="overlay">Kandal<br />Sale: 103 | Rent: 2k</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#locationCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#locationCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Green Left Box -->
+        <div
+          class="col-md-6 bg-success text-white text-center p-5 rounded-start"
+        >
+          <i class="bi bi-house-door-fill fs-1 mb-3"></i>
+          <p class="fs-5">
+            List your property for
+            <span class="fw-bold text-warning">FREE</span> to sell or rent your
+            home faster!
+          </p>
+          <a href="">
+            <button class="btn btn-light text-success fw-bold">
+              LIST MY PROPERTY
+            </button></a
+          >
+        </div>
+
+        <!-- Black Right Box -->
+        <div class="col-md-6 bg-dark text-white text-center p-5 rounded-end">
+          <i class="bi bi-people-fill fs-1 mb-3"></i>
+          <p class="fs-5">
+            <strong>Become our partner</strong> to expose latest projects and
+            supercharge sales!
+          </p>
+
+          <a href="contactUs.html" class="btn btn-success fw-bold"
+            ><button href="" class="btn btn-success fw-bold">
+              CONTACT US
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 📱 App Promotion Section -->
+    <div class="container text-center py-5">
+      <div class="row align-items-center">
+        <!-- Left Phone Image -->
+        <div class="col-12 col-md-4 order-md-1 mb-4 mb-md-0">
+          <img
+            src="img/Screenshot 2025-07-14 230925.png"
+            class="img-fluid rounded"
+            alt="App Screenshot 1"
+            width="100px"
+            height="100px"
+          />
+        </div>
+
+        <!-- Text Center -->
+        <div class="col-12 col-md-4 order-md-2">
+          <h4>
+            Available in <span class="text-success">iOS</span> and
+            <span class="text-success">Android</span>
+          </h4>
+          <p>Buy or rent from thousands of New Developments and Boreys</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a
+              href="https://apps.apple.com/la/app/realestate-com-kh/id1219891105"
+              ><img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                height="45"
+                alt="App Store"
+            /></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.reakh_v2&hl=en_AU"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                height="45"
+                alt="Google Play"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Right Phone Image -->
+        <div class="col-12 col-md-4 order-md-3">
+          <img
+            width="100px"
+            height="200px"
+            src="img/image.png"
+            class="img-fluid rounded"
+            alt="App Screenshot 2"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar Scroll -->
+    <div class="sidebar">
+      <button id="scrollUpBtn" title="Scroll Up">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <button id="scrollDownBtn" title="Scroll Down">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button title="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <button title="Call"><i class="fas fa-phone"></i></button>
+      <button title="App"><i class="fas fa-mobile-alt"></i></button>
+      <button title="WeChat"><i class="fab fa-weixin"></i></button>
+      <button title="Profile"><i class="fas fa-user"></i></button>
+      <button title="Share"><i class="fas fa-share-alt"></i></button>
+    </div>
+    <div id="footer_condos"></div>
+    <!-- Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const heroCarousel = document.querySelector("#heroCarousel");
+
+        if (heroCarousel) {
+          const carousel = new bootstrap.Carousel(heroCarousel, {
+            interval: 10000,
+            wrap: true,
+          });
+
+          carousel.cycle();
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/footer_menu.js"></script>
+    <script src="js/sidebarbottom.js"></script>
+  </body>
+</html>
